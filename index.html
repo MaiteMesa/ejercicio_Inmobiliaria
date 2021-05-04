@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inmobiliaria</title>
-</head>
-<body>
-    
-    <header></header>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <img class="flecha" src="./img/Vector.svg" alt="" />
 
-    <main></main>
+      <h1 class="tituloEncabezamiento">Título</h1>
+    </header>
 
+    <main>
+      <h2>Información</h2>
+      <!-- Añadir fotos grande-->
+      <section class="galeria">
+        <img
+          src="img/casa_jardin.jpg"
+          srcset="./img/casa_jardin@2x.jpg 2x, ./img/casa_jardin@3x.jpg 3x"
+          alt="imagen grande"
+        />
 
-    <footer></footer>
+        <section class="galeriaPequena">
+          <img
+            src="img/cocina_diafana.jpg"
+            srcset="
+              ./img/cocina_diafana@2x.jpg 2x,
+              ./img/cocina_diafana@3x.jpg 3x
+            "
+            alt="imagen pequeña"
+          />
 
-</body>
+          <img
+            src="img/sala_butaca_alfombra.jpg"
+            srcset="
+              ./img/sala_butaca_alfombra@2x.jpg 2x,
+              ./img/sala_butaca_alfombra@3x.jpg 3x
+            "
+            alt="imagen pequeña"
+          />
+          <img
+            src="img/salon_sofa_alfombra.jpg"
+            srcset="
+              ./img/salon_sofa_alfombra@2x.jpg 2x,
+              ./img/salon_sofa_alfombra@3x.jpg 3x
+            "
+            alt="imagen pequeña"
+          />
+          <img
+            src="img/salon_sofa_mesa.jpg"
+            srcset="
+              ./img/salon_sofa_mesa@2x.jpg 2x,
+              ./img/salon_sofa_mesa@3x.jpg 3x
+            "
+            alt="imagen pequeña"
+          />
+        </section>
+      </section>
+      <!-- Añadir fotos galeria pequeñas -->
+
+      <article class="descripcion">
+        <h2>Descripción</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet debitis
+          suscipit corrupti?
+        </p>
+      </article>
+
+      <article class="ayudaVisualIcono">
+        <!-- Añadir icono -->
+        <img class="iconoCasa" src="./img/Vector_iconoCasa.svg" alt="" />
+        <h3 class="explicacionAlquiler">1 año de alquiler</h3>
+        
+      </article>
+      <h4>Descripción de ...</h4>
+    </main>
+
+    <footer>
+      <!--Añadir botón siguiente  -->
+
+      <a class="boton">siguiente</a>
+    </footer>
+  </body>
 </html>
